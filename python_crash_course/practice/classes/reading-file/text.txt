@@ -1,0 +1,10 @@
+name: Gabriel
+last name: Barreto
+age: 2000
+nationality: BR
+---------------------- 
+name: Gabriel
+last name: Barreto
+age: 25
+nationality: Brazilian / Portuguese
+---------------------- 
