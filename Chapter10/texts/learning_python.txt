@@ -1,4 +1,0 @@
-In python you can use classes to refer to an object
-In python you can read files
-In python you can make api calls
-In python you can make mobile apps
