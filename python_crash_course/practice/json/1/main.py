@@ -12,16 +12,12 @@ class Read:
         self.gender = gender
         self.ip_address = ip_address
 
-
 def __str__(self):
-    # c = Read(f"first_name: {m.first_name}, last_name: {m.last_name}")
     with open(val) as read_file:
         values = json.load(read_file)
         for i in values:
-            # print(i['first_name'])
             c = Read(i['first_name'], i['last_name'], i['Country'], i['City'], i['email'], i['gender'], i['ip_address'])
-            print(c)
+            print(f" First name: {c.first_name}\n",f"Last name: {c.last_name}\n", f"Country: {c.country}\n", f"City: {c.city}\n", f"Email: {c.email}\n", f"Gender: {c.gender}\n", f"Ip Address: {c.ip_address}\n =======================")
 
-# c = __str__("")           
-# print(__str__(c))
 __str__("")
+
