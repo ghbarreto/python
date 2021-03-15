@@ -22,13 +22,11 @@
 
 {% block content %} 
 <div class="container">
-
     <form action="/genders">
-    {% for i in gender %}
-        <input class="btn-radio" type="radio" id="{{i}}" name="gender" value="{{i}}">
-        <label for="{{i}}">{{i}}</label>
-    {% endfor %}
-    <input type="submit">   
+        {% for subfield in form: %}
+            {{ subfield }}
+            {{ subfield.submit }}
+        {% endfor %}
     </form>
 
     <div class="container tbl">   

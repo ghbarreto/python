@@ -1,9 +1,13 @@
-from wtforms import Form, RadioField, validators
+from wtforms import Form, RadioField, SubmitField
 import static.scripts.functions as func
 
-class FormGender(Form):     
-    choice_switcher = RadioField(
-        'Choice?',
-        [validators.Required()],
-        choices=[('choice1', 'Choice One'), ('choice2', 'Choice Two')], default='choice1'
-    )
+class FormGender(Form): 
+    file = func.read_file()
+    gender = func.single_digit(file)
+    for i in gender: 
+        choice_switcher = RadioField('label', choices=gender)
+        submit = SubmitField('Submit')
+
+    
+
+
