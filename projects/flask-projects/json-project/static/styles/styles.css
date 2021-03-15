@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.tbl{
+    overflow: auto;
+    height: 80vh;
+   
+    padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
